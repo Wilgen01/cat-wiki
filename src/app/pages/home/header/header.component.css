@@ -33,7 +33,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 6rem;
+    width: 8rem;
     background: #ffffff;
     overflow: hidden;
     max-height: 2rem;
@@ -103,7 +103,7 @@
 
 
 .modal__search{
-    margin: auto;
+    margin: 1.5rem auto .7rem;
 }
 
 .modal__input{
