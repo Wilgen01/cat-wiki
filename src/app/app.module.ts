@@ -6,25 +6,24 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './shared/nav/nav.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './pages/home/home.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { MostSearchedComponent } from './shared/most-searched/most-searched.component';
-import { WhyACatComponent } from './shared/why-acat/why-acat.component';
-import { FooterComponent } from './shared/footer/footer.component';
+import { SharedModule } from './shared/shared.module';
+import { HeaderComponent } from './pages/home/header/header.component';
+import { MostSearchedComponent } from './pages/home/most-searched/most-searched.component';
+import { WhyACatComponent } from './pages/home/why-acat/why-acat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
     HomeComponent,
     HeaderComponent,
     MostSearchedComponent,
     WhyACatComponent,
-    FooterComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

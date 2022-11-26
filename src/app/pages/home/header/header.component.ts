@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CatServiceService } from '../../services/cat-service.service';
-import { CatBreed } from '../../models/CatApi.model';
+import { CatServiceService } from '../../../services/cat-service.service';
+import { CatBreed } from '../../../models/CatApi.model';
 
 @Component({
   selector: 'app-header',
