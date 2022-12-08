@@ -7,6 +7,8 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'most-searched', loadChildren: () =>
     import('./pages/most-searched/most-searched.module').then(m => m.MostSearchedModule)},
+  { path: 'details/:breed_id', loadChildren: () =>
+    import('./pages/breed-detail/breed-detail.module').then(m => m.BreedDetailModule)},
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
 

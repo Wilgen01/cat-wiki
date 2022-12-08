@@ -16,6 +16,8 @@ export class HeaderComponent implements OnInit {
 
   constructor(private cat: CatServiceService) {
     cat.getBreeds().subscribe(data => {
+      console.log(data);
+      
       this.beedsLists = data.map(result => (
         {
           id: result.id,

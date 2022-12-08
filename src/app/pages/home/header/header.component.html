@@ -24,7 +24,7 @@
                 <input #texto (keyup)="buscar(texto.value)" type="text" class="modal__input">
             </div>
             <div class="model__results">
-                <a *ngFor="let breed of beedsList" class="modal__result" href="">{{breed.name}}</a>
+                <a *ngFor="let breed of beedsList" class="modal__result" [routerLink]="['/details', breed.id]">{{breed.name}}</a>
                 <a *ngIf="beedsList.length < 1" href=""> Sin resultados ¯\_(ツ)_/¯</a>
             </div>
         </div>

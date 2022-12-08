@@ -1,0 +1,51 @@
+.detail-conteiner{
+    min-width: 300px;
+    overflow: hidden;
+}
+.detail__aptitude{
+    font-size: .75rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .7rem;
+}
+
+.detail__aptitude__title{
+    font-weight: 700;
+}
+
+.detail__aptitude__description{
+    overflow: hidden;
+    grid-column: 2/4;
+}
+
+.detail__grade{
+    align-items: center;
+    display: grid;
+    grid-column: 2/4;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+
+}
+
+.grade__item{
+    width: 100%;
+    background: #E0E0E0;
+    height: 7px;
+    border-radius: 6px;
+}
+
+.grade--1 :nth-child(1){
+    background: #544439;
+}
+.grade--2 :nth-child(1), .grade--2 :nth-child(2) {
+    background: #544439;
+}
+.grade--3 :nth-child(1), .grade--3 :nth-child(2), .grade--3 :nth-child(3) {
+    background: #544439;
+}
+.grade--4 :nth-child(1), .grade--4 :nth-child(2),  .grade--4 :nth-child(3), .grade--4 :nth-child(4) {
+    background: #544439;
+}
+.grade--5 :nth-child(1), .grade--5 :nth-child(2),  .grade--5 :nth-child(3), .grade--5 :nth-child(4), .grade--5 :nth-child(5) {
+    background: #544439;
+}
